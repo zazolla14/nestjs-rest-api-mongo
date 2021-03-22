@@ -7,7 +7,7 @@ import { ItemsModule } from './items/items.module'
 import { ItemsService } from './items/items.service'
 
 @Module({
-        imports: [ItemsModule, MongooseModule.forRoot()],
+        imports: [ItemsModule],
         controllers: [AppController, ItemsController],
         providers: [AppService, ItemsService],
 })
